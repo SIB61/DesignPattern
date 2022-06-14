@@ -1,13 +1,12 @@
-package strategyPattern;
+package factoryPattern;
 
-import java.lang.reflect.Method;
 
-public class PaymentMethod {
+public class PaymentFactory {
     public IPayment getPaymentMethod(PaymentMethods method){
         IPayment iPayment;
         switch (method){
             case Bkash -> {
-                iPayment= new Bkash();
+                iPayment=new Bkash();
             }
             case Nogod -> {
                 iPayment=new Nogod();

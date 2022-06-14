@@ -1,4 +1,4 @@
-package strategyPattern;
+package factoryPattern;
 
 public enum PaymentMethods {
     Bkash,
