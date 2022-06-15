@@ -19,7 +19,7 @@ public class Main {
       observable.addObserver(observer2);
 
        //change in observable
-       observable.state=new Scanner(System.in).nextInt();
+       observable.state=30;
 
        //notify all observers
         observable.notifyObservers();
