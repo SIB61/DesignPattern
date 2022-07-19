@@ -1,10 +1,10 @@
 package decoratorPattern;
 
-abstract class AddOns extends Drink{
-    int price;
+abstract class AddOns implements Drink{
+    Drink drink;
 
-   AddOns(int price){
-       this.price=price;
+   AddOns(Drink drink){
+       this.drink=drink;
    }
 
 }

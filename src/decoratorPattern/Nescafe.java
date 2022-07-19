@@ -1,8 +1,8 @@
 package decoratorPattern;
 
-public class Nescafe extends Drink{
+public class Nescafe implements Drink{
     @Override
-    int calculateCost() {
+    public int calculateCost() {
         return 50;
     }
 }

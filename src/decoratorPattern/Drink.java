@@ -1,5 +1,5 @@
 package decoratorPattern;
 
-abstract class Drink {
-    abstract int calculateCost();
+interface Drink {
+    int calculateCost();
 }

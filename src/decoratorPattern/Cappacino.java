@@ -1,9 +1,9 @@
 package decoratorPattern;
 
-public class Cappacino extends Drink{
+public class Cappacino implements Drink{
 
     @Override
-    int calculateCost() {
+    public int calculateCost() {
         return 120;
     }
 }

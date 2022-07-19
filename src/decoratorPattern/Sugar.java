@@ -2,10 +2,10 @@ package decoratorPattern;
 
 public class Sugar extends AddOns{
     Sugar(Drink drink) {
-        super(drink.calculateCost());
+        super(drink);
     }
     @Override
-    int calculateCost() {
-        return price+10;
+    public int calculateCost() {
+        return drink.calculateCost()+10;
     }
 }
